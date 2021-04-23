@@ -1,0 +1,287 @@
+/* DOC SETUP */
+:root {
+  --blue: #05386b;
+  --dark-green: #379683;
+  --green: #5cdb95;
+  --light-green: #8ee4af;
+  --tan: #edf5e1;
+}
+
+html {
+  font-family: "Exo", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--tan);
+}
+
+div#wrapper {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 960px;
+  box-shadow: 0 0 10px #888;
+}
+
+main {
+  margin: 20px;
+  line-height: 1.5em;
+}
+
+h1,
+h2,
+ul {
+  margin: 0;
+}
+
+a {
+  color: var(--green);
+}
+
+/* END DOC SETUP */
+
+/* HEADER */
+
+header {
+  background-color: var(--green);
+  text-align: center;
+  padding: 30px;
+  background-image: url(images/logo.png);
+  background-repeat: no-repeat;
+  background-position: 30px 30px;
+}
+
+header,
+nav a {
+  color: var(--tan);
+}
+
+header h1 {
+  font-size: 52px;
+  color: var(--tan);
+}
+
+/* END HEADER */
+
+/* NAV */
+
+nav {
+  margin: 0;
+  background-color: var(--blue);
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  list-style: none;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--light-green);
+}
+
+.keepOpen {
+  clear: both;
+}
+
+.active {
+  background-color: var(--dark-green);
+}
+
+/* END NAV */
+
+/* MAIN */
+
+main h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+main h2 {
+  margin-top: 50px;
+}
+
+dl {
+  border: 3px ridge #fa4930;
+  padding: 15px;
+  padding-top: 0px;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.destinations {
+  list-style-image: url(images/pin.png);
+  margin-left: -20px;
+}
+
+.restaurants {
+  list-style-image: url(images/pizza.png);
+  margin-left: -20px;
+}
+
+table.dates {
+  border-collapse: collapse;
+  width: 98.5%;
+  font-size: 0.8rem;
+  border: 1px solid #fab730;
+  margin: 0 1% 1rem 1%;
+}
+
+table.dates th {
+  text-align: left;
+  background-color: #de5b2a;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.75rem 0.5rem;
+}
+
+table.dates td {
+  padding: 0.5rem;
+}
+
+table.dates tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+table.dates tr:hover {
+  background-color: #fab730;
+  color: white;
+}
+
+/* END MAIN */
+
+/* IMAGES */
+
+figure.rightside {
+  float: right;
+  width: 33.33%;
+  border: solid 1px #de5b2a;
+  margin: 0 0 0.25em 2%;
+}
+
+figure.rightside img {
+  width: 100%;
+}
+
+figure.rightside figcaption {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #de5b2a;
+}
+
+figure.gallery {
+  width: 200px;
+  margin: auto;
+}
+
+figure.gallery figcaption {
+  text-align: center;
+  color: var(--tan);
+  background-color: var(--green);
+  margin-top: -7px;
+  padding: 10px;
+}
+
+div.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.grow {
+  transition: all .2s ease-in-out
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+/* END IMAGES */
+
+/* FORM */
+
+form.booking fieldset {
+  border: 1px solid #de5b2a;
+  border-radius: 1rem;
+  padding: 1rem 2%;
+  margin-bottom: 1rem;
+}
+
+form.booking legend {
+  font-size: 1.2rem;
+  color: #de5b2a;
+}
+
+form.booking label {
+  display: block;
+}
+
+form.booking span {
+  display: block;
+  padding-top: 1rem;
+  color: #fa4930;
+}
+
+form.booking .userinput {
+  background-color: rgba(250, 183, 48, 0.3);
+  border-radius: 1rem;
+}
+
+form.booking .submitbutton {
+  background-color: #fab730;
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid #de8f2a;
+}
+
+form.booking textarea {
+  width: 300px;
+  height: 100px;
+  background-color: rgba(250, 183, 48, 0.3);
+  border-radius: 1rem;
+}
+
+/* END FORM */
+
+/* MAP */
+
+iframe.map {
+  border: 3px solid #fab730;
+  width: 94%;
+  margin-left: 3%;
+  height: 500px;
+}
+
+/* END MAP */
+
+/* YOUTUBE */
+
+iframe.youtube {
+  width: 90%;
+  margin-left: 5%;
+  height: 400px;
+}
+
+/* END YOUTUBE */
+
+/* FOOTER */
+
+footer {
+  margin: 0;
+  background-color: var(--green);
+  text-align: center;
+  color: var(--tan);
+  padding: 1px;
+}
+
+/* END FOOTER */
